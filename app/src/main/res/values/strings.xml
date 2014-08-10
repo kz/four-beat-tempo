@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Four Beat Tempo</string>
+    <string name="main_instructions">Tap the beat four times on the screen</string>
+    <string name="reset_instructions">Tap the screen to reset</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
