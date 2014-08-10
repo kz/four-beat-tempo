@@ -56,7 +56,8 @@
         android:layout_alignTop="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:typeface="sans"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleHorizontal"
