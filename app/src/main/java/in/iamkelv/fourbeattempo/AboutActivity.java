@@ -2,17 +2,28 @@ package in.iamkelv.fourbeattempo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
-import in.iamkelv.fourbeattempo.R;
+import android.widget.TextView;
+
 
 public class AboutActivity extends Activity {
+
+    private TextView aboutUsTwoLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         getActionBar().setDisplayShowHomeEnabled(false);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // Make links clickable.
+        aboutUsTwoLabel = (TextView) findViewById(R.id.textView2);
+        aboutUsTwoLabel.setMovementMethod(LinkMovementMethod.getInstance());
+        aboutUsTwoLabel.setText(Html.fromHtml(getResources().getString(R.string.about_us_2)));
     }
 
 
@@ -29,9 +40,6 @@ public class AboutActivity extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
         return super.onOptionsItemSelected(item);
     }
 }

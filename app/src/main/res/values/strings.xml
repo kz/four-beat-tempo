@@ -5,6 +5,8 @@
     <string name="main_instructions">Tap the beat four times on the screen</string>
     <string name="reset_instructions">Tap the screen to reset</string>
     <string name="action_about">About</string>
-    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_about">About</string>
+    <string name="about_us">A simple app to convert the time between taps into beats per minute.</string>
+    <string name="about_us_2">This app is completely open source and is available on &lt;a href="http://github.com/kz/four-beat-tempo">GitHub&lt;/a>. Feel free to add to it. If you have any queries, email me at &lt;a href="mailto:hello@iamkelv.in">hello@iamkelv.in&lt;/a>.</string>
 
 </resources>
