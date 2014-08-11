@@ -48,12 +48,16 @@ public class MainActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
+        // Change the visibility of the labels.
+        mInstructionLabel.setVisibility(View.VISIBLE);
+        mResetLabel.setVisibility(View.INVISIBLE);
+        mTempoLabel.setVisibility(View.INVISIBLE);
+        mMarkingLabel.setVisibility(View.INVISIBLE);
         // Reset the tempo variables.
         mTempo.resetVariables();
         Tempo mTempo = new Tempo();
         // Reset the progress bar.
         mProgressBar.setProgress(0);
-
     }
 
     @Override
